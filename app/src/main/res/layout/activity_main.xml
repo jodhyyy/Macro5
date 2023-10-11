@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/SeaGreen"
+    android:background="#79BE3A"
     tools:context=".MainActivity">
 
 
@@ -53,9 +53,10 @@
         android:layout_marginBottom="184dp"
         android:layout_marginRight="42dp"
         android:layout_marginLeft="42dp"
-        android:background="@drawable/btn_next_background"
+        android:background="@drawable/background_button"
         android:text="Login"
         android:textStyle="bold"
+        android:textColor="@color/White"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -68,9 +69,10 @@
         android:layout_marginLeft="42dp"
         android:layout_marginRight="42dp"
         android:layout_marginBottom="112dp"
-        android:background="@drawable/btn_next_background"
+        android:background="@drawable/background_button"
         android:text="Register"
         android:textStyle="bold"
+        android:textColor="@color/White"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.518"

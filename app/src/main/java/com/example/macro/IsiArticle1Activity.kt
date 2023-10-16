@@ -17,5 +17,8 @@ class IsiArticle1Activity : AppCompatActivity() {
         binding.btnKembali.setOnClickListener {
             startActivity(Intent(this, DashboardActivity::class.java))
         }
+        binding.btnBack.setOnClickListener {
+            startActivity(Intent(this, ArticleActivity::class.java))
+        }
     }
 }

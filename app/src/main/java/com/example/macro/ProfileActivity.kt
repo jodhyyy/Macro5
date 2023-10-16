@@ -24,5 +24,17 @@ class ProfileActivity : AppCompatActivity() {
         binding.barhome.setOnClickListener {
             startActivity(Intent(this, DashboardActivity::class.java))
         }
+        binding.btnEditProfile.setOnClickListener {
+            startActivity(Intent(this, EditProfileActivity::class.java))
+        }
+        binding.btnChangePassword.setOnClickListener {
+            startActivity(Intent(this, ChangePasswordActivity::class.java))
+        }
+        binding.btnCustomerService.setOnClickListener {
+            startActivity(Intent(this, CustomerServiceActivity::class.java))
+        }
+        binding.btnFaq.setOnClickListener {
+            startActivity(Intent(this, FaqActivity::class.java))
+        }
     }
 }

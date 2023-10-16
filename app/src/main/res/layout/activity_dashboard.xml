@@ -281,7 +281,7 @@
     <androidx.coordinatorlayout.widget.CoordinatorLayout
         android:layout_width="match_parent"
         android:layout_height="120dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="45dp"
         android:background="@drawable/background_transparan"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -348,7 +348,7 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="0.25"
-                    android:background="@drawable/background_navbar"
+                    android:background="@drawable/background_button"
                     android:orientation="vertical">
 
                     <ImageView

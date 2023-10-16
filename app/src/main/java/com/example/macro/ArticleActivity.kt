@@ -20,5 +20,8 @@ class ArticleActivity : AppCompatActivity() {
         binding.artikel1.setOnClickListener {
             startActivity(Intent(this, IsiArticle1Activity::class.java))
         }
+        binding.barprofile.setOnClickListener {
+            startActivity(Intent(this, ProfileActivity::class.java))
+        }
     }
 }

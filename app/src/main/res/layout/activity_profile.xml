@@ -5,20 +5,19 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/backgroundmacro"
-    tools:context=".ProfileActivity">
+    tools:context=".ArticleActivity">
 
     <LinearLayout
-        android:id="@+id/linearLayout3"
+        android:id="@+id/tampilan_profile"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
         <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/constraintLayout"
             android:layout_width="370dp"
             android:layout_height="160dp"
             android:layout_margin="10dp"
@@ -29,7 +28,7 @@
             app:layout_constraintTop_toBottomOf="@+id/textView15">
 
             <ImageView
-                android:id="@+id/imageView5"
+                android:id="@+id/imageView3"
                 android:layout_width="187dp"
                 android:layout_height="139dp"
                 android:layout_marginStart="2dp"
@@ -42,186 +41,174 @@
 
             <TextView
                 android:id="@+id/textView22"
-                android:layout_width="175dp"
-                android:layout_height="28dp"
-                android:layout_marginTop="40dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
                 android:text="Jodhy Herlambang"
-                android:textColor="#57AE09"
-                android:textSize="18sp"
+                android:textColor="#183D3D"
+                android:textSize="20sp"
                 android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.285"
-                app:layout_constraintStart_toEndOf="@+id/imageView5"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/imageView3"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
-                android:id="@+id/textView24"
-                android:layout_width="175dp"
-                android:layout_height="28dp"
-                android:text="JL. Aja dulu"
-                android:textColor="#57AE09"
-                android:textSize="18sp"
+                android:id="@+id/textView23"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Jl. Aja Dulu"
+                android:textColor="#183D3D"
+                android:textSize="20sp"
                 android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.333"
-                app:layout_constraintStart_toEndOf="@+id/imageView5"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/imageView3"
                 app:layout_constraintTop_toBottomOf="@+id/textView22" />
 
             <TextView
-                android:layout_width="175dp"
-                android:layout_height="28dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
                 android:text="08123456789"
-                android:textColor="#57AE09"
-                android:textSize="18sp"
+                android:textColor="#183D3D"
+                android:textSize="20sp"
                 android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.333"
-                app:layout_constraintStart_toEndOf="@+id/imageView5"
-                app:layout_constraintTop_toBottomOf="@+id/textView24" />
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/imageView3"
+                app:layout_constraintTop_toBottomOf="@+id/textView23" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
     </LinearLayout>
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/editProfile"
-        android:layout_width="304dp"
-        android:layout_height="36dp"
-        android:layout_margin="10dp"
-        android:layout_marginTop="50dp"
+    <LinearLayout
+        android:id="@+id/btn_edit_profile"
+        android:layout_width="217dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="80dp"
         android:background="@drawable/background_edittext"
+        android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout3">
+        app:layout_constraintTop_toBottomOf="@+id/tampilan_profile">
 
         <TextView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:text="Edit Profile"
             android:textAlignment="center"
             android:textColor="@color/Black"
-            android:textSize="16sp"
+            android:textSize="20sp"
             android:textStyle="normal"
-            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            tools:layout_editor_absoluteY="0dp" />
 
+    </LinearLayout>
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
-
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/changepassword"
-        android:layout_width="304dp"
-        android:layout_height="36dp"
-        android:layout_margin="10dp"
-        android:layout_marginTop="86dp"
+    <LinearLayout
+        android:id="@+id/btn_change_password"
+        android:layout_width="217dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="30dp"
         android:background="@drawable/background_edittext"
+        android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editProfile">
+        app:layout_constraintTop_toBottomOf="@+id/btn_edit_profile">
 
         <TextView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:text="Change Password"
             android:textAlignment="center"
             android:textColor="@color/Black"
-            android:textSize="16sp"
+            android:textSize="20sp"
             android:textStyle="normal"
-            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            tools:layout_editor_absoluteY="0dp" />
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/customerservice"
-        android:layout_width="304dp"
-        android:layout_height="36dp"
-        android:layout_margin="10dp"
-        android:layout_marginTop="86dp"
+    <LinearLayout
+        android:id="@+id/btn_customer_service"
+        android:layout_width="217dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="30dp"
         android:background="@drawable/background_edittext"
+        android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/changepassword">
+        app:layout_constraintTop_toBottomOf="@+id/btn_change_password">
 
         <TextView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:text="Customer Service"
             android:textAlignment="center"
             android:textColor="@color/Black"
-            android:textSize="16sp"
+            android:textSize="20sp"
             android:textStyle="normal"
-            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            tools:layout_editor_absoluteY="0dp" />
 
+    </LinearLayout>
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
-
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/faqs"
-        android:layout_width="304dp"
-        android:layout_height="36dp"
-        android:layout_margin="10dp"
-
-        android:layout_marginTop="144dp"
+    <LinearLayout
+        android:id="@+id/btn_faq"
+        android:layout_width="217dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="30dp"
         android:background="@drawable/background_edittext"
+        android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/customerservice">
+        app:layout_constraintTop_toBottomOf="@+id/btn_customer_service">
 
         <TextView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="FAQ's"
+            android:layout_height="match_parent"
+            android:text="FAQ"
             android:textAlignment="center"
             android:textColor="@color/Black"
-            android:textSize="16sp"
+            android:textSize="20sp"
             android:textStyle="normal"
-            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            tools:layout_editor_absoluteY="0dp" />
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btn_logout"
         style="@android:style/Widget.Button"
-        android:layout_width="188dp"
+        android:layout_width="247dp"
         android:layout_height="42dp"
-        android:layout_marginTop="180dp"
-        android:background="@drawable/background_kembali"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/background_button"
         android:text="Logout"
-        android:textColor="@color/White"
+        android:textColor="@color/WhiteSmoke"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/faqs" />
+        app:layout_constraintTop_toBottomOf="@+id/btn_faq" />
 
     <androidx.coordinatorlayout.widget.CoordinatorLayout
         android:layout_width="match_parent"
         android:layout_height="120dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="105dp"
         android:background="@drawable/background_transparan"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_logout"
-        app:layout_constraintVertical_bias="1.0">
+        app:layout_constraintTop_toBottomOf="@+id/btn_logout">
 
         <com.google.android.material.bottomappbar.BottomAppBar
+            android:id="@+id/app_bar"
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:gravity="bottom"
@@ -281,7 +268,7 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="0.25"
-                    android:background="@drawable/background_navbar"
+                    android:background="@drawable/background_button"
                     android:orientation="vertical">
 
                     <ImageView
@@ -341,5 +328,6 @@
         </com.google.android.material.bottomappbar.BottomAppBar>
 
     </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

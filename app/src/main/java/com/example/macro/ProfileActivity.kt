@@ -2,6 +2,7 @@ package com.example.macro
 
 import android.content.Intent
 import android.os.Bundle
+import android.window.SplashScreen
 import androidx.appcompat.app.AppCompatActivity
 import com.example.macro.databinding.ActivityMainBinding
 import com.example.macro.databinding.ActivityProfileBinding
@@ -15,7 +16,7 @@ class ProfileActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         binding.btnLogout.setOnClickListener {
-            startActivity(Intent(this, ActivityMainBinding::class.java))
+            startActivity(Intent(this, LoginActivity::class.java))
         }
         binding.bararticle.setOnClickListener {
             startActivity(Intent(this, ArticleActivity::class.java))

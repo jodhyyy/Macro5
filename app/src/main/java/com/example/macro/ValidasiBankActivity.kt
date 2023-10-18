@@ -13,13 +13,13 @@ class ValidasiBankActivity : AppCompatActivity() {
         binding = ActivityValidasiBankBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        binding.btnBankTarik.setOnClickListener {
+        binding.btnTarikBank.setOnClickListener {
             startActivity(Intent(this, TukarPointBerhasilActivity::class.java))
         }
-        binding.ibHome.setOnClickListener {
+        binding.ibHomeValidasiBank.setOnClickListener {
             startActivity(Intent(this, DashboardActivity::class.java))
         }
-        binding.ibBackArrow.setOnClickListener {
+        binding.ibBackArrowValidasiBank.setOnClickListener {
             startActivity(Intent(this, BankActivity::class.java))
         }
     }

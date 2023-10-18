@@ -3,14 +3,14 @@ package com.example.macro
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.example.macro.databinding.ActivityTukarPointBerhasilBinding
+import com.example.macro.databinding.ActivityPickUpBerhasilBinding
 
-class TukarPointBerhasilActivity : AppCompatActivity() {
+class PickUpBerhasilActivity : AppCompatActivity() {
 
-    private lateinit var binding: ActivityTukarPointBerhasilBinding
+    private lateinit var binding: ActivityPickUpBerhasilBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityTukarPointBerhasilBinding.inflate(layoutInflater)
+        binding = ActivityPickUpBerhasilBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
         binding.kembaliBeranda.setOnClickListener {

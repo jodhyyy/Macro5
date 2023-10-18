@@ -16,6 +16,12 @@
             android:name=".MapsActivity"
             android:exported="false" />
         <activity
+            android:name=".ValidasiPulsaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PulsaActivity"
+            android:exported="false" />
+        <activity
             android:name=".AlamatPickupActivity"
             android:exported="false" />
         <activity
@@ -31,7 +37,7 @@
             android:name=".BankActivity"
             android:exported="false" />
         <activity
-            android:name=".PickUpActivity"
+            android:name=".PickUpBerhasilActivity"
             android:exported="false" />
         <activity
             android:name=".TukarPointBerhasilActivity"

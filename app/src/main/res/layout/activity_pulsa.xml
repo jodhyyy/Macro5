@@ -5,13 +5,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/backgroundmacro"
-    tools:context=".BankActivity">
+    tools:context=".PulsaActivity">
 
     <TextView
-        android:id="@+id/textBank"
+        android:id="@+id/textPulsa"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Bank"
+        android:text="Pulsa"
         android:textColor="#568D25"
         android:textSize="20sp"
         android:textStyle="bold"
@@ -23,7 +23,7 @@
         app:layout_constraintVertical_bias="0.035" />
 
     <ImageButton
-        android:id="@+id/ib_back_arrow_bank"
+        android:id="@+id/ib_back_arrow_bankpulsa"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="20dp"
@@ -33,10 +33,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/textBank" />
+        app:layout_constraintTop_toTopOf="@+id/textPulsa" />
 
     <ImageButton
-        android:id="@+id/ib_home"
+        android:id="@+id/ib_home_pulsa"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="5.5dp"
@@ -46,31 +46,31 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/textBank" />
+        app:layout_constraintTop_toTopOf="@+id/textPulsa" />
 
     <RelativeLayout
-        android:id="@+id/rl_nrm_rekening"
-        android:layout_width="match_parent"
-        android:layout_height="168dp"
+        android:id="@+id/rl_nmr_handphone"
+        android:layout_width="372dp"
+        android:layout_height="100dp"
         android:layout_marginLeft="20dp"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="20dp"
         android:layout_marginRight="20dp"
         android:background="@drawable/card_nrm_rekening"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/ib_home_bank"
+        app:layout_constraintEnd_toEndOf="@+id/ib_home_pulsa"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textBank"
+        app:layout_constraintTop_toBottomOf="@+id/textPulsa"
         app:layout_constraintVertical_bias="0.0">
 
         <TextView
-            android:id="@+id/nmr_rekening"
+            android:id="@+id/nmr_handphone"
             android:layout_width="186dp"
             android:layout_height="28dp"
             android:layout_marginLeft="15dp"
             android:layout_marginTop="10dp"
             android:gravity="center_vertical"
-            android:text="Nomor Rekening"
+            android:text="Nomor Handphone"
             android:textColor="#568D25"
             android:textSize="14sp"
             android:textStyle="bold" />
@@ -78,41 +78,15 @@
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="35dp"
             android:layout_marginLeft="15dp"
+            android:layout_marginTop="35dp"
             android:layout_marginRight="15dp"
-            android:inputType="number"
-            android:textColor="@drawable/btn_bank"
-            android:gravity="center_vertical"
             android:backgroundTint="@color/ForestGreen"
-            />
+            android:gravity="center_vertical"
+            android:inputType="number"
+            android:textColor="@drawable/btn_bank" />
 
-    <com.google.android.material.textfield.TextInputLayout
-        style="@style/Widget.Material3.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
-        android:layout_width="match_parent"
-        android:layout_height="45dp"
-        android:layout_marginTop="100dp"
-        android:layout_marginLeft="15dp"
-        android:layout_marginRight="15dp"
-        android:textColorHint="@color/White"
-        android:paddingTop="10dp"
-        android:paddingBottom="15dp"
-        android:gravity="center"
-        android:hint="Pilih Bank"
-        android:background="@drawable/pilih_bank"
-        app:boxCornerRadiusBottomStart="@dimen/material_emphasis_medium"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="324dp" >
-
-        <AutoCompleteTextView
-            android:id="@+id/dropdown_ewallet"
-            android:layout_width="match_parent"
-            android:layout_height="30dp"
-            android:inputType="none"
-            android:backgroundTint="@color/White"/>
-    </com.google.android.material.textfield.TextInputLayout>
-
-</RelativeLayout>
+    </RelativeLayout>
 
     <RelativeLayout
         android:id="@+id/rl_nominal"
@@ -123,10 +97,10 @@
         android:layout_marginRight="20dp"
         android:background="@drawable/card_nrm_rekening"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/ib_home_bank"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintEnd_toEndOf="@+id/ib_home_pulsa"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/rl_nrm_rekening"
+        app:layout_constraintTop_toBottomOf="@+id/rl_nmr_handphone"
         app:layout_constraintVertical_bias="0.0">
 
         <TextView
@@ -145,10 +119,10 @@
             android:id="@+id/rl_harga1"
             android:layout_width="100dp"
             android:layout_height="30dp"
-            android:layout_marginLeft="15dp"
-            android:background="@drawable/pilih_bank"
             android:layout_below="@+id/tv_nominal"
-            android:layout_marginTop="10dp" >
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/pilih_bank">
 
             <TextView
                 android:layout_width="wrap_content"
@@ -171,11 +145,11 @@
             android:id="@+id/rl_harga2"
             android:layout_width="100dp"
             android:layout_height="30dp"
-            android:layout_marginLeft="20dp"
-            android:layout_toRightOf="@+id/rl_harga1"
-            android:background="@drawable/pilih_bank"
             android:layout_below="@+id/tv_nominal"
-            android:layout_marginTop="10dp" >
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/rl_harga1"
+            android:background="@drawable/pilih_bank">
 
             <TextView
                 android:layout_width="wrap_content"
@@ -198,11 +172,11 @@
             android:id="@+id/rl_harga3"
             android:layout_width="100dp"
             android:layout_height="30dp"
-            android:layout_marginLeft="20dp"
-            android:layout_toRightOf="@+id/rl_harga2"
-            android:background="@drawable/pilih_bank"
             android:layout_below="@+id/tv_nominal"
-            android:layout_marginTop="10dp" >
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/rl_harga2"
+            android:background="@drawable/pilih_bank">
 
             <TextView
                 android:layout_width="wrap_content"
@@ -225,10 +199,10 @@
             android:id="@+id/rl_harga4"
             android:layout_width="100dp"
             android:layout_height="30dp"
-            android:layout_marginLeft="15dp"
-            android:background="@drawable/pilih_bank"
             android:layout_below="@+id/tv_nominal"
-            android:layout_marginTop="60dp" >
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="60dp"
+            android:background="@drawable/pilih_bank">
 
             <TextView
                 android:layout_width="wrap_content"
@@ -251,11 +225,11 @@
             android:id="@+id/rl_harga5"
             android:layout_width="100dp"
             android:layout_height="30dp"
-            android:layout_marginLeft="20dp"
-            android:layout_toRightOf="@+id/rl_harga4"
-            android:background="@drawable/pilih_bank"
             android:layout_below="@+id/tv_nominal"
-            android:layout_marginTop="60dp" >
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="60dp"
+            android:layout_toRightOf="@+id/rl_harga4"
+            android:background="@drawable/pilih_bank">
 
             <TextView
                 android:layout_width="wrap_content"
@@ -278,24 +252,23 @@
             android:id="@+id/rl_harga6"
             android:layout_width="100dp"
             android:layout_height="30dp"
-            android:layout_marginLeft="20dp"
-            android:layout_toRightOf="@+id/rl_harga5"
-            android:background="@drawable/pilih_bank"
             android:layout_below="@+id/tv_nominal"
-            android:layout_marginTop="60dp" >
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="60dp"
+            android:layout_toRightOf="@+id/rl_harga5"
+            android:background="@drawable/pilih_bank">
 
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="84dp"
+                android:layout_height="30dp"
                 android:layout_alignParentStart="true"
                 android:layout_alignParentTop="true"
                 android:layout_alignParentEnd="true"
                 android:layout_alignParentBottom="true"
-                android:layout_marginStart="10dp"
+                android:layout_marginStart="6dp"
                 android:layout_marginTop="-1dp"
                 android:layout_marginEnd="10dp"
                 android:layout_marginBottom="1dp"
-                android:textSize="13sp"
                 android:gravity="center"
                 android:text="Nominal Lain"
                 android:textColor="@color/White"
@@ -305,14 +278,13 @@
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="140dp"
             android:layout_marginLeft="15dp"
+            android:layout_marginTop="140dp"
             android:layout_marginRight="15dp"
-            android:inputType="number"
-            android:textColor="@drawable/btn_bank"
-            android:gravity="center_vertical"
             android:backgroundTint="@color/ForestGreen"
-            />
+            android:gravity="center_vertical"
+            android:inputType="number"
+            android:textColor="@drawable/btn_bank" />
     </RelativeLayout>
 
     <Button
@@ -331,4 +303,5 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="@+id/rl_nominal" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

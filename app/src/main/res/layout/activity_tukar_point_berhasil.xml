@@ -21,7 +21,7 @@
         app:layout_constraintVertical_bias="0.039" />
 
     <Button
-        android:id="@+id/ib_home"
+        android:id="@+id/kembali_beranda"
         android:layout_width="297dp"
         android:layout_height="43dp"
         android:backgroundTint="#57AE09"

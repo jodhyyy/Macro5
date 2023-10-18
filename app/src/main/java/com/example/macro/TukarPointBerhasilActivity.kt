@@ -13,7 +13,7 @@ class TukarPointBerhasilActivity : AppCompatActivity() {
         binding = ActivityTukarPointBerhasilBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        binding.ibHome.setOnClickListener {
+        binding.kembaliBeranda.setOnClickListener {
             startActivity(Intent(this, DashboardActivity::class.java))
         }
     }

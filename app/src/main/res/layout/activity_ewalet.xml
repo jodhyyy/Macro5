@@ -294,7 +294,12 @@
                 android:layout_marginStart="5dp"
                 android:layout_marginTop="-1dp"
                 android:layout_marginEnd="10dp"
+<<<<<<< HEAD
+                android:layout_marginBottom="1dp"
+                android:textSize="13sp"
+=======
                 android:layout_marginBottom="0dp"
+>>>>>>> 3f9e3555d44db9ea7a3cba299751e981df1328d1
                 android:gravity="center"
                 android:text="Nominal Lain"
                 android:textColor="@color/White"

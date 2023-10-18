@@ -17,5 +17,8 @@ class BankActivity : AppCompatActivity() {
         binding.ibHome.setOnClickListener {
             startActivity(Intent(this, DashboardActivity::class.java))
         }
+        binding.btnBankSelanjutnya.setOnClickListener {
+            startActivity(Intent(this, ValidasiBankActivity::class.java))
+        }
     }
 }

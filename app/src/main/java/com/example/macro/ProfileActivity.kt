@@ -36,5 +36,8 @@ class ProfileActivity : AppCompatActivity() {
         binding.btnFaq.setOnClickListener {
             startActivity(Intent(this, FaqActivity::class.java))
         }
+        binding.bartracking.setOnClickListener {
+            startActivity(Intent(this, TrackingActivity::class.java))
+        }
     }
 }

@@ -19,5 +19,8 @@ class EWaletActivity : AppCompatActivity() {
         binding.btnSelanjutnyaEwallet.setOnClickListener {
             startActivity(Intent(this, ValidasiEWaletActivity::class.java))
         }
+        binding.ibBackArrowEwallet.setOnClickListener {
+            startActivity(Intent(this, TrackingActivity::class.java))
+        }
     }
 }

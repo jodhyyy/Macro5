@@ -36,7 +36,7 @@
         app:layout_constraintTop_toTopOf="@+id/textBank" />
 
     <ImageButton
-        android:id="@+id/ib_home_bank"
+        android:id="@+id/ib_home_pickup"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="5.5dp"
@@ -184,7 +184,7 @@
     </RelativeLayout>
 
     <Button
-        android:id="@+id/btn_bank_selanjutnya"
+        android:id="@+id/btn_pickup_selanjutnya"
         android:layout_width="match_parent"
         android:layout_height="49dp"
         android:layout_marginLeft="20dp"

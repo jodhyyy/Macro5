@@ -16,6 +16,12 @@
             android:name=".BankActivity"
             android:exported="false" />
         <activity
+            android:name=".PickUpActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TukarPointBerhasilActivity"
+            android:exported="false" />
+        <activity
             android:name=".FaqActivity"
             android:exported="false" />
         <activity

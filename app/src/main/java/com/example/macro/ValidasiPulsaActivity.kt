@@ -19,5 +19,8 @@ class ValidasiPulsaActivity : AppCompatActivity() {
         binding.ibBackArrowValidasiPulsa.setOnClickListener {
             startActivity(Intent(this, PulsaActivity::class.java))
         }
+        binding.btnTarikPulsa.setOnClickListener {
+            startActivity(Intent(this, TukarPointBerhasilActivity::class.java))
+        }
     }
 }

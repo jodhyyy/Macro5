@@ -5,13 +5,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/backgroundmacro"
-    tools:context=".ValidasiBankActivity">
+    tools:context=".ValidasiEWaletActivity">
 
     <TextView
-        android:id="@+id/tv_validasi_bank"
+        android:id="@+id/tv_validasi_ewallet"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Bank"
+        android:text="E-Wallet"
         android:textColor="#568D25"
         android:textSize="20sp"
         android:textStyle="bold"
@@ -23,7 +23,7 @@
         app:layout_constraintVertical_bias="0.035" />
 
     <ImageButton
-        android:id="@+id/ib_back_arrow_validasi_bank"
+        android:id="@+id/ib_back_arrow_validasi_ewallet"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="20dp"
@@ -33,10 +33,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/tv_validasi_bank" />
+        app:layout_constraintTop_toTopOf="@+id/tv_validasi_ewallet" />
 
     <ImageButton
-        android:id="@+id/ib_home_validasi_bank"
+        android:id="@+id/ib_home_validasi_ewallet"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="5.5dp"
@@ -46,10 +46,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/tv_validasi_bank" />
+        app:layout_constraintTop_toTopOf="@+id/tv_validasi_ewallet" />
 
     <RelativeLayout
-        android:id="@+id/rl_validasi_bank"
+        android:id="@+id/rl_validasi_ewallet"
         android:layout_width="match_parent"
         android:layout_height="256dp"
         android:layout_marginLeft="20dp"
@@ -59,11 +59,11 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_validasi_bank"
+        app:layout_constraintTop_toBottomOf="@+id/tv_validasi_ewallet"
         app:layout_constraintVertical_bias="0.0">
 
         <RelativeLayout
-            android:id="@+id/rl_card_validasi_bank"
+            android:id="@+id/rl_card_validasi_ewallet"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
@@ -73,25 +73,25 @@
             android:background="@drawable/validasi_bank">
 
             <TextView
-                android:id="@+id/tv_jenis_bank"
+                android:id="@+id/tv_jenis_ewallet"
                 android:layout_width="115dp"
                 android:layout_height="28dp"
                 android:layout_marginLeft="15dp"
                 android:layout_marginTop="10dp"
                 android:gravity="center_vertical"
-                android:text="Jenis Bank  "
+                android:text="Jenis E-Wallet  "
                 android:textColor="@color/White"
                 android:textSize="14sp"
                 android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/tv_value_jenis_bank"
+                android:id="@+id/tv_value_jenis_ewallet"
                 android:layout_width="wrap_content"
                 android:layout_height="28dp"
                 android:layout_marginLeft="15dp"
                 android:layout_marginTop="10dp"
                 android:gravity="center_vertical"
-                android:text="Mandiri"
+                android:text="Dana"
                 android:layout_marginStart="210dp"
                 android:textColor="@color/White"
                 android:textSize="14sp"
@@ -111,7 +111,7 @@
             <!--                />-->
 
             <TextView
-                android:id="@+id/tv_nmr_rekening_bank"
+                android:id="@+id/tv_nmr_rekening_ewallet"
                 android:layout_width="115dp"
                 android:layout_height="28dp"
                 android:layout_marginLeft="15dp"
@@ -124,7 +124,7 @@
                 android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/tv_value_nrm_rekening_bank"
+                android:id="@+id/tv_value_nrm_rekening_ewallet"
                 android:layout_width="wrap_content"
                 android:layout_height="28dp"
                 android:layout_marginLeft="15dp"
@@ -150,7 +150,7 @@
             <!--                />-->
 
             <TextView
-                android:id="@+id/tv_nama_bank"
+                android:id="@+id/tv_nama_ewallet"
                 android:layout_width="115dp"
                 android:layout_height="28dp"
                 android:layout_marginLeft="15dp"
@@ -162,7 +162,7 @@
                 android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/tv_value_nama_bank"
+                android:id="@+id/tv_value_nama_ewallet"
                 android:layout_width="wrap_content"
                 android:layout_height="28dp"
                 android:layout_marginLeft="15dp"
@@ -210,7 +210,7 @@
             />
 
         <TextView
-            android:id="@+id/tv_value_nominal_bank"
+            android:id="@+id/tv_value_nominal_ewallet"
             android:layout_width="wrap_content"
             android:layout_height="28dp"
             android:layout_marginLeft="15dp"
@@ -237,7 +237,7 @@
             />
 
         <TextView
-            android:id="@+id/tv_value_tukar_point_bank"
+            android:id="@+id/tv_value_tukar_point_ewallet"
             android:layout_width="wrap_content"
             android:layout_height="28dp"
             android:layout_marginLeft="15dp"
@@ -252,7 +252,7 @@
     </RelativeLayout>
 
     <Button
-        android:id="@+id/btn_tarik_bank"
+        android:id="@+id/btn_tarik_ewallet"
         android:layout_width="match_parent"
         android:layout_height="49dp"
         android:layout_marginLeft="20dp"
@@ -266,6 +266,6 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="@+id/rl_validasi_bank" />
+        app:layout_constraintStart_toStartOf="@+id/rl_validasi_ewallet" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

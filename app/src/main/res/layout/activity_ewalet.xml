@@ -5,13 +5,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/backgroundmacro"
-    tools:context=".BankActivity">
+    tools:context=".EWaletActivity">
 
     <TextView
-        android:id="@+id/tv_bank"
+        android:id="@+id/tv_ewallet"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Bank"
+        android:text="E-Wallet"
         android:textColor="#568D25"
         android:textSize="20sp"
         android:textStyle="bold"
@@ -23,7 +23,7 @@
         app:layout_constraintVertical_bias="0.035" />
 
     <ImageButton
-        android:id="@+id/ib_back_arrow_bank"
+        android:id="@+id/ib_back_arrow_ewallet"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="20dp"
@@ -33,10 +33,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/tv_bank" />
+        app:layout_constraintTop_toTopOf="@+id/tv_ewallet" />
 
     <ImageButton
-        android:id="@+id/ib_home_bank"
+        android:id="@+id/ib_home_ewallet"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="5.5dp"
@@ -46,10 +46,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/tv_bank" />
+        app:layout_constraintTop_toTopOf="@+id/tv_ewallet" />
 
     <RelativeLayout
-        android:id="@+id/rl_nrm_rekening_bank"
+        android:id="@+id/rl_nrm_rekening_ewallet"
         android:layout_width="match_parent"
         android:layout_height="168dp"
         android:layout_marginLeft="20dp"
@@ -57,14 +57,14 @@
         android:layout_marginRight="20dp"
         android:background="@drawable/card_nrm_rekening"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/ib_home_bank"
+        app:layout_constraintEnd_toEndOf="@+id/ib_home_ewallet"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_bank"
+        app:layout_constraintTop_toBottomOf="@+id/tv_ewallet"
         app:layout_constraintVertical_bias="0.0">
 
         <TextView
-            android:id="@+id/tv_nmr_rekening_bank"
+            android:id="@+id/tv_nmr_rekening_ewallet"
             android:layout_width="186dp"
             android:layout_height="28dp"
             android:layout_marginLeft="15dp"
@@ -105,7 +105,7 @@
             tools:layout_editor_absoluteY="324dp" >
 
             <AutoCompleteTextView
-                android:id="@+id/dropdown_bank"
+                android:id="@+id/dropdown_ewallet"
                 android:layout_width="match_parent"
                 android:layout_height="30dp"
                 android:inputType="none"
@@ -115,7 +115,7 @@
     </RelativeLayout>
 
     <RelativeLayout
-        android:id="@+id/rl_nominal_bank"
+        android:id="@+id/rl_nominal_ewallet"
         android:layout_width="match_parent"
         android:layout_height="207dp"
         android:layout_marginLeft="20dp"
@@ -123,14 +123,14 @@
         android:layout_marginRight="20dp"
         android:background="@drawable/card_nrm_rekening"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/ib_home_bank"
+        app:layout_constraintEnd_toEndOf="@+id/ib_home_ewallet"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/rl_nrm_rekening_bank"
+        app:layout_constraintTop_toBottomOf="@+id/rl_nrm_rekening_ewallet"
         app:layout_constraintVertical_bias="0.0">
 
         <TextView
-            android:id="@+id/tv_nominal_bank"
+            android:id="@+id/tv_nominal_ewallet"
             android:layout_width="186dp"
             android:layout_height="28dp"
             android:layout_marginLeft="15dp"
@@ -142,12 +142,12 @@
             android:textStyle="bold" />
 
         <RelativeLayout
-            android:id="@+id/rl_harga1_bank"
+            android:id="@+id/rl_harga1_ewallet"
             android:layout_width="100dp"
             android:layout_height="30dp"
             android:layout_marginLeft="15dp"
             android:background="@drawable/pilih_bank"
-            android:layout_below="@+id/tv_nominal_bank"
+            android:layout_below="@+id/tv_nominal_ewallet"
             android:layout_marginTop="10dp" >
 
             <TextView
@@ -168,13 +168,13 @@
         </RelativeLayout>
 
         <RelativeLayout
-            android:id="@+id/rl_harga2_bank"
+            android:id="@+id/rl_harga2_ewallet"
             android:layout_width="100dp"
             android:layout_height="30dp"
             android:layout_marginLeft="20dp"
-            android:layout_toRightOf="@+id/rl_harga1_bank"
+            android:layout_toRightOf="@+id/rl_harga1_ewallet"
             android:background="@drawable/pilih_bank"
-            android:layout_below="@+id/tv_nominal_bank"
+            android:layout_below="@+id/tv_nominal_ewallet"
             android:layout_marginTop="10dp" >
 
             <TextView
@@ -195,13 +195,13 @@
         </RelativeLayout>
 
         <RelativeLayout
-            android:id="@+id/rl_harga3_bank"
+            android:id="@+id/rl_harga3_ewallet"
             android:layout_width="100dp"
             android:layout_height="30dp"
             android:layout_marginLeft="20dp"
-            android:layout_toRightOf="@+id/rl_harga2_bank"
+            android:layout_toRightOf="@+id/rl_harga2_ewallet"
             android:background="@drawable/pilih_bank"
-            android:layout_below="@+id/tv_nominal_bank"
+            android:layout_below="@+id/tv_nominal_ewallet"
             android:layout_marginTop="10dp" >
 
             <TextView
@@ -222,12 +222,12 @@
         </RelativeLayout>
 
         <RelativeLayout
-            android:id="@+id/rl_harga4_bank"
+            android:id="@+id/rl_harga4_ewallet"
             android:layout_width="100dp"
             android:layout_height="30dp"
             android:layout_marginLeft="15dp"
             android:background="@drawable/pilih_bank"
-            android:layout_below="@+id/tv_nominal_bank"
+            android:layout_below="@+id/tv_nominal_ewallet"
             android:layout_marginTop="60dp" >
 
             <TextView
@@ -248,13 +248,13 @@
         </RelativeLayout>
 
         <RelativeLayout
-            android:id="@+id/rl_harga5_bank"
+            android:id="@+id/rl_harga5_ewallet"
             android:layout_width="100dp"
             android:layout_height="30dp"
             android:layout_marginLeft="20dp"
-            android:layout_toRightOf="@+id/rl_harga4_bank"
+            android:layout_toRightOf="@+id/rl_harga4_ewallet"
             android:background="@drawable/pilih_bank"
-            android:layout_below="@+id/tv_nominal_bank"
+            android:layout_below="@+id/tv_nominal_ewallet"
             android:layout_marginTop="60dp" >
 
             <TextView
@@ -275,13 +275,13 @@
         </RelativeLayout>
 
         <RelativeLayout
-            android:id="@+id/rl_harga6_bank"
+            android:id="@+id/rl_harga6_ewallet"
             android:layout_width="100dp"
             android:layout_height="30dp"
             android:layout_marginLeft="20dp"
-            android:layout_toRightOf="@+id/rl_harga5_bank"
+            android:layout_toRightOf="@+id/rl_harga5_ewallet"
             android:background="@drawable/pilih_bank"
-            android:layout_below="@+id/tv_nominal_bank"
+            android:layout_below="@+id/tv_nominal_ewallet"
             android:layout_marginTop="60dp" >
 
             <TextView
@@ -315,13 +315,13 @@
     </RelativeLayout>
 
     <Button
-        android:id="@+id/btn_selanjutnya_bank"
+        android:id="@+id/btn_selanjutnya_ewallet"
         android:layout_width="match_parent"
         android:layout_height="49dp"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         android:layout_marginBottom="85dp"
-        android:text="Selanjutnya"
+        android:text="Selannjutnya"
         android:textStyle="bold"
         android:textSize="16sp"
         android:textColor="@color/White"
@@ -329,6 +329,6 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="@+id/rl_nominal_bank" />
+        app:layout_constraintStart_toStartOf="@+id/rl_nominal_ewallet" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

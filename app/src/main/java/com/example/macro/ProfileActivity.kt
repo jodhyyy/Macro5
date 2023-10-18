@@ -39,5 +39,8 @@ class ProfileActivity : AppCompatActivity() {
         binding.bartracking.setOnClickListener {
             startActivity(Intent(this, TrackingActivity::class.java))
         }
+        binding.barpickup.setOnClickListener {
+            startActivity(Intent(this, PickupActivity::class.java))
+        }
     }
 }

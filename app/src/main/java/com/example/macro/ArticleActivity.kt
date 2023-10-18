@@ -23,5 +23,11 @@ class ArticleActivity : AppCompatActivity() {
         binding.barprofile.setOnClickListener {
             startActivity(Intent(this, ProfileActivity::class.java))
         }
+        binding.bartracking.setOnClickListener {
+            startActivity(Intent(this, TrackingActivity::class.java))
+        }
+        binding.barpickup.setOnClickListener {
+            startActivity(Intent(this, PickupActivity::class.java))
+        }
     }
 }

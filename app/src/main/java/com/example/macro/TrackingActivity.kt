@@ -13,10 +13,10 @@ class TrackingActivity : AppCompatActivity() {
         binding = ActivityTrackingBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        binding.imageButton2.setOnClickListener {
+        binding.btnBank.setOnClickListener {
             startActivity(Intent(this, BankActivity::class.java))
         }
-        binding.imageButton3.setOnClickListener {
+        binding.btnEwallet.setOnClickListener {
             startActivity(Intent(this, EWaletActivity::class.java))
         }
         binding.btnPulsa.setOnClickListener {
@@ -30,6 +30,9 @@ class TrackingActivity : AppCompatActivity() {
         }
         binding.barprofile.setOnClickListener {
             startActivity(Intent(this, ProfileActivity::class.java))
+        }
+        binding.barpickup.setOnClickListener {
+            startActivity((Intent(this, PickupActivity::class.java)))
         }
     }
 }

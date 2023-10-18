@@ -22,5 +22,8 @@ class AlamatPickupActivity : AppCompatActivity() {
         binding.rlPilihPetaPickup.setOnClickListener {
             startActivity(Intent(this, MapsActivity::class.java))
         }
+        binding.ibBackArrowBank.setOnClickListener {
+            startActivity(Intent(this, TrackingActivity::class.java))
+        }
     }
 }

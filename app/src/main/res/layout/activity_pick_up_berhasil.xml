@@ -23,7 +23,7 @@
     <Button
         android:layout_width="297dp"
         android:layout_height="43dp"
-        android:background="@drawable/button_tukarpoint"
+        android:backgroundTint="#57AE09"
         android:text="Kembali Ke Beranda"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

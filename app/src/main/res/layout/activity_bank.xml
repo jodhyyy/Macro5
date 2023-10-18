@@ -23,7 +23,7 @@
         app:layout_constraintVertical_bias="0.035" />
 
     <ImageButton
-        android:id="@+id/imageButton2"
+        android:id="@+id/ib_back_arrow_bank"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="20dp"
@@ -36,7 +36,7 @@
         app:layout_constraintTop_toTopOf="@+id/textBank" />
 
     <ImageButton
-        android:id="@+id/ib_home"
+        android:id="@+id/ib_home_bank"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="5.5dp"
@@ -57,7 +57,7 @@
         android:layout_marginRight="20dp"
         android:background="@drawable/card_nrm_rekening"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/imageButton"
+        app:layout_constraintEnd_toEndOf="@+id/ib_home_bank"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textBank"
@@ -95,18 +95,21 @@
         android:layout_marginLeft="15dp"
         android:layout_marginRight="15dp"
         android:textColorHint="@color/White"
+        android:paddingTop="10dp"
+        android:paddingBottom="15dp"
         android:gravity="center"
-        android:hint="Pilih Bank"
+        android:hint="Pilih E-Wallet"
         android:background="@drawable/pilih_bank"
         app:boxCornerRadiusBottomStart="@dimen/material_emphasis_medium"
         tools:layout_editor_absoluteX="16dp"
         tools:layout_editor_absoluteY="324dp" >
 
         <AutoCompleteTextView
-            android:id="@+id/dropdown_bank"
+            android:id="@+id/dropdown_ewallet"
             android:layout_width="match_parent"
             android:layout_height="30dp"
-            android:inputType="none" />
+            android:inputType="none"
+            android:backgroundTint="@color/White"/>
     </com.google.android.material.textfield.TextInputLayout>
 
 </RelativeLayout>
@@ -120,7 +123,7 @@
         android:layout_marginRight="20dp"
         android:background="@drawable/card_nrm_rekening"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/imageButton"
+        app:layout_constraintEnd_toEndOf="@+id/ib_home_bank"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/rl_nrm_rekening"
@@ -159,7 +162,7 @@
                 android:layout_marginEnd="10dp"
                 android:layout_marginBottom="1dp"
                 android:gravity="center"
-                android:text="Rp. 15.000"
+                android:text="Rp. 5.000"
                 android:textColor="@color/White"
                 android:textStyle="bold" />
         </RelativeLayout>
@@ -186,7 +189,7 @@
                 android:layout_marginEnd="10dp"
                 android:layout_marginBottom="1dp"
                 android:gravity="center"
-                android:text="Rp. 20.000"
+                android:text="Rp. 10.000"
                 android:textColor="@color/White"
                 android:textStyle="bold" />
         </RelativeLayout>
@@ -213,7 +216,7 @@
                 android:layout_marginEnd="10dp"
                 android:layout_marginBottom="1dp"
                 android:gravity="center"
-                android:text="Rp. 20.000"
+                android:text="Rp. 15.000"
                 android:textColor="@color/White"
                 android:textStyle="bold" />
         </RelativeLayout>
@@ -266,7 +269,7 @@
                 android:layout_marginEnd="10dp"
                 android:layout_marginBottom="1dp"
                 android:gravity="center"
-                android:text="Rp. 20.000"
+                android:text="Rp. 50.000"
                 android:textColor="@color/White"
                 android:textStyle="bold" />
         </RelativeLayout>
@@ -293,7 +296,7 @@
                 android:layout_marginEnd="10dp"
                 android:layout_marginBottom="1dp"
                 android:gravity="center"
-                android:text="Rp. 20.000"
+                android:text="Nomial Lain"
                 android:textColor="@color/White"
                 android:textStyle="bold" />
         </RelativeLayout>

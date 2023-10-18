@@ -20,5 +20,8 @@ class BankActivity : AppCompatActivity() {
         binding.btnBankSelanjutnya.setOnClickListener {
             startActivity(Intent(this, ValidasiBankActivity::class.java))
         }
+        binding.ibBackArrowBank.setOnClickListener {
+            startActivity(Intent(this, TrackingActivity::class.java))
+        }
     }
 }

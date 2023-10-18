@@ -19,5 +19,8 @@ class PulsaActivity : AppCompatActivity() {
         binding.btnBankSelanjutnya.setOnClickListener {
             startActivity(Intent(this, ValidasiPulsaActivity::class.java))
         }
+        binding.ibBackArrowBankpulsa.setOnClickListener {
+            startActivity(Intent(this, TrackingActivity::class.java))
+        }
     }
 }

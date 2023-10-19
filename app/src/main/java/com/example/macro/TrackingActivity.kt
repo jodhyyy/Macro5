@@ -13,10 +13,10 @@ class TrackingActivity : AppCompatActivity() {
         binding = ActivityTrackingBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        binding.btnBank.setOnClickListener {
+        binding.tombolBank.setOnClickListener {
             startActivity(Intent(this, BankActivity::class.java))
         }
-        binding.btnEwallet.setOnClickListener {
+        binding.tombolEwallet.setOnClickListener {
             startActivity(Intent(this, EWaletActivity::class.java))
         }
         binding.btnPulsa.setOnClickListener {

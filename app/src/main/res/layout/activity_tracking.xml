@@ -35,7 +35,7 @@
         app:layout_constraintTop_toBottomOf="@+id/imageView8" />
 
     <ImageButton
-        android:id="@+id/btn_bank"
+        android:id="@+id/tombol_bank"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="39dp"
@@ -46,14 +46,14 @@
         app:layout_constraintTop_toBottomOf="@+id/textView25" />
 
     <ImageButton
-        android:id="@+id/btn_ewallet"
+        android:id="@+id/tombol_ewallet"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="39dp"
         android:layout_marginTop="20dp"
         android:background="@drawable/wallet"
         android:contentDescription="E-wallet"
-        app:layout_constraintStart_toEndOf="@+id/btn_bank"
+        app:layout_constraintStart_toEndOf="@+id/tombol_bank"
         app:layout_constraintTop_toBottomOf="@+id/textView25" />
 
     <ImageButton
@@ -64,7 +64,7 @@
         android:layout_marginTop="20dp"
         android:background="@drawable/pulsa"
         android:contentDescription="pulsa"
-        app:layout_constraintStart_toEndOf="@+id/btn_ewallet"
+        app:layout_constraintStart_toEndOf="@+id/tombol_ewallet"
         app:layout_constraintTop_toBottomOf="@+id/textView25" />
 
     <ImageView
